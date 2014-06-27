@@ -3,7 +3,7 @@ vagrantfile-local:
     vm:
         box: puphpet/ubuntu1204-x64
         box_url: puphpet/ubuntu1204-x64
-        hostname: null
+        hostname: 'vanilla-devbox'
         memory: '1024'
         chosen_provider: virtualbox
         network:
@@ -57,7 +57,7 @@ server:
             bash_aliases: null
     _prevent_empty: ''
 mailcatcher:
-    install: '1'
+    install: 0
     settings:
         smtp_ip: 0.0.0.0
         smtp_port: 1025
